@@ -30,7 +30,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'ls'
+    script: 'ls -al'
 
 # - task: CmdLine@2
 #   inputs:
