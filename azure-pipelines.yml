@@ -10,7 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-
   uiBuild: 'public'
 
 steps:
@@ -29,5 +28,6 @@ steps:
     publishLocation: 'Container'
 
 - task: CmdLine@2
+  displayName: "Push to GitHub"
   inputs:
     script: 'git push https://$(GitHub.PAT)@github.com/sometheasiekswx/Impermanence-UI HEAD:main'
