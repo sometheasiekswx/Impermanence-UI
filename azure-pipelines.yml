@@ -10,12 +10,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
+
   uiBuild: 'public'
 
 steps:
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(uiBuild)'
+    rootFolderOrFile: '$(build.sourcesDirectory)'
     includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
