@@ -1,0 +1,98 @@
+:root {
+  --primary-color:  #fafffd;
+  --secondary-color: #020300;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: var(--primary-color);
+  background: url("../images/background.svg") var(--secondary-color);
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+img {
+  width: 100%
+}
+
+.landing-page-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 36px;
+  grid-row-gap: 0px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+/* .landing-page-item {
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+
+.landing-page-title {
+  grid-area: 4 / 3 / 5 / 11;
+  padding: 0px;
+}
+
+.landing-page-item-subtitle {
+  grid-area: 6 / 5 / 7 / 9;
+}
+
+.landing-page-item-author {
+  grid-area: 8 / 6 / 9 / 8;
+}
+
+.landing-page-item-down {
+  grid-area: 10 / 6 / 13 / 8;
+}
+
+.landing-page-item-down-arrow {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.landing-page-item-down-arrow-1 {
+  transform: scale(0.5);
+}
+
+.landing-page-item-down-arrow-2 {
+  transform: scale(1);
+}
+
+.landing-page-item-down-arrow-3 {
+  padding-top: 1rem;
+  transform: scale(1.5);
+}
+
+.landing-page-item-information {
+  grid-area: 11 / 2 / 13 / 3;
+}
+
+.landing-page-item-information button {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+}
+
+.landing-page-item-question {
+  grid-area: 11 / 11 / 13 / 12;
+}
+
+.landing-page-item-question img {
+  min-width: 26px;
+}

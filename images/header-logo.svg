@@ -1,0 +1,11 @@
+<svg id="Header_Logo" data-name="Header Logo" xmlns="http://www.w3.org/2000/svg" width="501.5" height="93" viewBox="0 0 501.5 93">
+  <text id="Impermanence" transform="translate(60.5 71)" fill="#fafffd" font-size="60" font-family="Work Sans" font-weight="500"><tspan x="0" y="0">Impermanence</tspan></text>
+  <g id="Icon" transform="translate(0 -3)">
+    <g id="BG" transform="translate(0 9.618)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="79.365" height="82.063" stroke="none"/>
+      <rect x="1" y="1" width="77.365" height="80.063" fill="none"/>
+    </g>
+    <text id="I" transform="matrix(-1, 0, 0, 1, 80, 79)" fill="#fff" font-size="80" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">I</tspan></text>
+    <path id="Bird" d="M0,32.643,7.651,18.81,23.857,7.024l5.29,1.062L26.972,9.539h9.883L51.018,0h1.954L48.3,7.024l2.716-1.1,1.954,2.162L35.138,20.628l3.783,3.341,2.2,7.043L54.964,42.5H48.3L31.1,37.084l-4.129,9.251L30.1,74.977l-4.78-3.8L10.765,42.5l3.556-8.563L6.131,36.119Z" transform="translate(60.667 87.776) rotate(180)" fill="#fff"/>
+  </g>
+</svg>

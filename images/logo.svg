@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="448" viewBox="0 0 350 448">
+  <g id="Logo" transform="translate(-4301 1313)">
+    <rect id="BG" width="350" height="350" transform="translate(4301 -1264)" fill="#fff"/>
+    <path id="Bird" d="M0,140.245,32.871,80.811,102.5,30.175l22.728,4.561-9.343,6.247h42.458L219.186,0h8.4L207.518,30.175l11.668-4.727,8.4,9.288-76.62,53.886,16.252,14.352,9.439,30.259,59.488,49.36H207.518l-73.9-23.268-17.738,39.747,13.426,123.051-20.534-16.316L46.248,182.593,61.524,145.8l-35.183,9.374Z" transform="translate(4551.919 -928.432) rotate(180)"/>
+    <text id="I" transform="matrix(-1, 0, 0, 1, 4651, -947)" font-size="384" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">I</tspan></text>
+  </g>
+</svg>

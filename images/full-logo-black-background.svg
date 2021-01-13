@@ -1,0 +1,12 @@
+<svg id="Full_Logo" data-name="Full Logo" xmlns="http://www.w3.org/2000/svg" width="1247" height="360" viewBox="0 0 1247 360">
+  <rect id="BG" width="1247" height="360"/>
+  <text id="Impermanence" transform="translate(199 102)" fill="#fafffd" font-size="125" font-family="Work Sans" font-weight="500"><tspan x="11.125" y="116">Impermanence</tspan></text>
+  <g id="Icon" transform="translate(106.5 76)">
+    <g id="BG-2" data-name="BG" transform="translate(0 17)" fill="none" stroke="#fff" stroke-width="3">
+      <rect width="142" height="145" stroke="none"/>
+      <rect x="1.5" y="1.5" width="139" height="142" fill="none"/>
+    </g>
+    <text id="I" transform="matrix(-1, 0, 0, 1, 143, 149)" fill="#fff" font-size="156" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">I</tspan></text>
+    <path id="Bird" d="M0,57.678,13.519,33.235,42.153,12.41,51.5,14.286l-3.843,2.569H65.12L90.144,0H93.6L85.346,12.41l4.8-1.944,3.453,3.82L62.086,36.448l6.684,5.9,3.882,12.444,24.466,20.3H85.346L54.953,65.526,47.658,81.872l5.522,50.607-8.445-6.71L19.02,75.095,25.3,59.965,10.833,63.82Z" transform="translate(107.195 155.101) rotate(180)" fill="#fff"/>
+  </g>
+</svg>
