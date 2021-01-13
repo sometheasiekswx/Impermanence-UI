@@ -28,3 +28,6 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
+- task: CmdLine@2
+  inputs:
+    script: 'git push https://$(GitHub.PAT)@github.com/sometheasiekswx/Impermanence-UI'
