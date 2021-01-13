@@ -9,9 +9,25 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  uiBuild: 'public'
+
 steps:
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(build.sourcesDirectory)'
     includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
+
 - task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
+- task: CmdLine@2
+  displayName: "Push to GitHub"
+  inputs:
+    script: 'git push https://$(GitHub.PAT)@github.com/sometheasiekswx/Impermanence-UI HEAD:main'
