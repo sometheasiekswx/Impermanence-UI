@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  uiBuild: 'public'
+
 steps:
 - task: ArchiveFiles@2
   inputs:
