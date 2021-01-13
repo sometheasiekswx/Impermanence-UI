@@ -30,4 +30,8 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'git push https://$(GitHub.PAT)@github.com/sometheasiekswx/Impermanence-UI'
+    script: 'ls'
+
+# - task: CmdLine@2
+#   inputs:
+#     script: 'git push https://$(GitHub.PAT)@github.com/sometheasiekswx/Impermanence-UI'
