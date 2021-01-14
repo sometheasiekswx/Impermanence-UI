@@ -1,6 +1,6 @@
 :root {
   --primary-color:  #fafffd;
-  --secondary-color: #020300;
+  --background-color: #020300;
   --yellow: #f6ae2d;
   --red: #f45b69;
   --blue: #0094c9;
@@ -18,11 +18,20 @@ html, body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   color: var(--primary-color);
-  background: url("../images/background.svg") var(--secondary-color);
+
+  background: url("../images/background.svg") var(--background-color);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
@@ -48,6 +57,11 @@ em {
 
 img {
   width: 100%
+}
+
+.nothing {
+  background: var(--background-color);
+  height: 100vh;
 }
 
 .header-logo { grid-area: 1 / 5 / 2 / 9; }
