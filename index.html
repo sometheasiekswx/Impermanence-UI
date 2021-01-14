@@ -4,33 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" type="image/png" href="./images/logo.svg" />
+    <link rel="stylesheet" href="./css/landing-page.css">
+
+    <link rel="icon" type="image/png" href="./images/logo.svg">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+
     <title>Impermanence</title>
 </head>
 
 <body>
-    <main class="landing-page-container">
-        <img src="./images/full-logo.svg" alt="Impermanence Full Logo" class="landing-page-item landing-page-title" />
-        <h2 class="landing-page-item landing-page-item-subtitle">And How Its <em>Good</em></h2>
-        <h3 class="landing-page-item landing-page-item-author">By Somethea Siek</h3>
-        <div class="landing-page-item landing-page-item-information">
-            <button>About</button>
-            <br />
-            <button>Share</button>
-        </div>
-        <a class="landing-page-item landing-page-item-down">
-            <img class="landing-page-item-down-arrow landing-page-item-down-arrow-1" src="./images/down-arrow.svg"
-                alt="Down Arrow" />
-            <img class="landing-page-item-down-arrow landing-page-item-down-arrow-2" src="./images/down-arrow.svg"
-                alt="Down Arrow" />
-            <img class="landing-page-item-down-arrow landing-page-item-down-arrow-3" src="./images/down-arrow.svg"
-                alt="Down Arrow" />
-        </a>
-        <a class="landing-page-item landing-page-item-question">
-            <img src="./images/question.svg" alt="Question Mark" />
-        </a>
+    <main>
+        <section class="landing-page" id="landing-page">
+            <img src="./images/full-logo.svg" alt="Impermanence Full Logo"
+                class="landing-page-item landing-page-title" />
+            <h2 class="landing-page-item landing-page-item-subtitle">And How Its <em>Good</em></h2>
+            <h3 class="landing-page-item landing-page-item-author">By Somethea Siek</h3>
+
+            <div class="information">
+                <button class="about">About</button>
+                <button class="share">Share</button>
+            </div>
+            <a class="down down-landing-page" href="#home-page">
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
+            </a>
+            <button class="question">
+                <img src="./images/question.svg" alt="Question Mark" />
+            </button>
+        </section>
+
+        <section class="home-page" id="home-page">
+            <img src="./images/header-logo.svg" alt="Impermanence Header Logo" class="header header-logo" />
+            <h2 class="header header-title">Home</h2>
+
+            <p class="text text-loss">
+                <em>Impermanence</em>, also known as the philosophical problem of change, is a philosophical concept
+                addressed in
+                a variety of religions and philosophies. In Eastern philosophy, it is the <em>three marks of
+                    existence</em>. It
+                is also an element of Hinduism. In the West, the writings of Heraclitus introduced the concept.
+            </p>
+
+            <img class="gif gif-loss" src="images/loss.svg">
+
+            <div class="links">
+                <a href="">1. Dealing With Loss</a>
+                <a href="">2. Building Confidence</a>
+                <a href="">3. Love, Love, Love</a>
+            </div>
+
+            <div class="information">
+                <button class="about">About</button>
+                <button class="share">Share</button>
+            </div>
+            <a class="down down-with-text" href="#">
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
+                <p class="down-text">Dealing With Loss</p>
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
+            </a>
+            <button class="question">
+                <img src="./images/question.svg" alt="Question Mark" />
+            </button>
+        </section>
     </main>
+
+    <script src="./js/down-landing-page.js"></script>
+    <script src="./js/about.js"></script>
+    <script src="./js/share.js"></script>
+    <script src="./js/question.js"></script>
 </body>
 
 </html>
+
+<!-- <img class="gif" src="loss/loss.svg">
+<img class="gif" src="homepage/homepage.gif">
+<img class="gif" src="confidence/confidence.svg">
+<object class="gif" data="love/love.svg" type="image/svg+xml"></object> -->
