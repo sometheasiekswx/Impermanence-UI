@@ -3,11 +3,18 @@
 .landing-page-title {
   grid-area: 3 / 4 / 4 / 10;
   padding: 0;
+
+  -webkit-animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .landing-page-item-subtitle {
   font-size: 2.5rem;
   grid-area: 5 / 5 / 6 / 9;
+
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .landing-page-item-author {
