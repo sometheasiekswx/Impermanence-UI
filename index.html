@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/landing-page.css">
 
     <link rel="icon" type="image/png" href="./images/logo.svg">
@@ -20,27 +21,71 @@
 
 <body>
     <main>
+        <div class="about-mask"></div>
+        <div class="about-popup">
+            <button class="about-close">X</button>
+            <h2 class="about-title">About</h2>
+            <p class="about-text">
+                Impermanence is a Web App project illustrating the exploration of "Impermanence". Built for <a
+                    href="https://www.deakin.edu.au/courses/unit?unit=ADV201" target="_blank">
+                    ADV201 - Web
+                    Design and
+                    Interactivity
+                </a>.
+            </p>
+            <h2 class="about-title">Author</h2>
+            <p class="about-text">
+                <a class="link-author">Somethea Siek</a>
+            </p>
+        </div>
+
+        <div class="share-mask"></div>
+        <div class="share-popup">
+            <button class="share-close">X</button>
+            <h2 class="share-title">Share</h2>
+            <p class="share-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem facere dolore nisi
+                molestiae tempora facilis deleniti, ab natus explicabo? Illo itaque ducimus eum dolores ea velit
+                obcaecati qui omnis?
+            </p>
+        </div>
+
+        <div class="question-mask"></div>
+        <div class="question-popup">
+            <button class="question-close">X</button>
+            <h2 class="question-title">Question</h2>
+            <p class="question-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe in distinctio corporis necessitatibus
+                deserunt sed eius, similique ipsa vel minus dolorem ipsam eaque, vero at. Facilis vero dicta debitis
+                labore.
+            </p>
+        </div>
+
+
         <section class="landing-page" id="landing-page">
-            <img src="./images/full-logo.svg" alt="Impermanence Full Logo"
-                class="landing-page-item landing-page-title" />
+            <a class="landing-page-item landing-page-title link-landing-page">
+                <img src="./images/full-logo.svg" alt="Impermanence Full Logo" />
+            </a>
             <h2 class="landing-page-item landing-page-item-subtitle">And How Its <em>Good</em></h2>
-            <h3 class="landing-page-item landing-page-item-author">By Somethea Siek</h3>
+            <h3 class="landing-page-item landing-page-item-author">
+                <a class="link-author">By Somethea Siek</a>
+            </h3>
 
             <div class="information">
                 <button class="about">About</button>
                 <button class="share">Share</button>
             </div>
-            <a class="down down-landing-page" href="#home-page">
+            <a class="down down-landing-page link-home-page">
                 <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
                 <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
                 <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
             </a>
             <button class="question">
-                <img src="./images/question.svg" alt="Question Mark" />
+                <img class="question-mark" src="./images/question.svg" alt="Question Mark" />
             </button>
         </section>
 
-        <div class="nothing">
+        <div class="transition landing-page-transition">
         </div>
 
         <section class="home-page" id="home-page">
@@ -55,12 +100,12 @@
                 is also an element of Hinduism. In the West, the writings of Heraclitus introduced the concept.
             </p>
 
-            <img class="gif gif-loss" src="images/loss.svg">
+            <img class="gif gif-loss" src="images/loss.svg" alt="Birds Outline">
 
             <div class="links">
-                <a href="">1. Dealing With Loss</a>
-                <a href="">2. Building Confidence</a>
-                <a href="">3. Love, Love, Love</a>
+                <a class="link-loss">1. Dealing With Loss</a>
+                <a class="link-confidence">2. Building Confidence</a>
+                <a class="link-love">3. Love, Love, Love</a>
             </div>
 
             <div class="information">
@@ -73,11 +118,14 @@
                 <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
             </a>
             <button class="question">
-                <img src="./images/question.svg" alt="Question Mark" />
+                <img class="question-mark" src="./images/question.svg" alt="Question Mark" />
             </button>
         </section>
     </main>
 
+    <script src="./js/lax.js"></script>
+    <script src="./js/transition.js"></script>
+    <script src="./js/links.js"></script>
     <script src="./js/down-landing-page.js"></script>
     <script src="./js/about.js"></script>
     <script src="./js/share.js"></script>
