@@ -1,8 +1,27 @@
 'use strict';
 
-const deleteLandingPage = (e) => {
-  console.log(e);
+const deleteLandingPage = () => {
+  const landingPage = document.querySelector('.landing-page');
+  if (landingPage) {
+    landingPage.parentNode.removeChild(landingPage);
+  }
 };
 
-const downButton = document.querySelector('.down-landing-page');
-downButton.onclick = (e) => deleteLandingPage(e);
+const deleteLandingPageTransition = () => {
+  const landingPageTransition = document.querySelector(
+    '.landing-page-transition',
+  );
+  if (landingPageTransition) {
+    landingPageTransition.parentNode.removeChild(landingPageTransition);
+  }
+};
+
+window.addEventListener('scroll', () => {
+  const homePage = document.querySelector('.home-page');
+
+  if (homePage.getBoundingClientRect().top <= 0) {
+    deleteLandingPage();
+    deleteLandingPageTransition();
+    playMusic();
+  }
+});
