@@ -16,4 +16,7 @@ window.addEventListener('load', () => {
   );
   addLinksTo('.link-home-page', '#home-page');
   addLinksTo('.link-landing-page', '#landing-page');
+  addLinksTo('.link-loss', '#loss');
+  addLinksTo('.link-confidence', '#confidence');
+  addLinksTo('.link-love', '#love');
 });
