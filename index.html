@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/landing-page.css">
+    <link rel="stylesheet" href="./css/home-page.css">
 
     <link rel="icon" type="image/png" href="./images/logo.svg">
 
@@ -21,6 +22,8 @@
 
 <body>
     <main>
+        <!-- ------------------------ Popups ------------------------ -->
+
         <div class="about-mask"></div>
         <div class="about-popup">
             <button class="about-close">X</button>
@@ -38,7 +41,6 @@
                 <a class="link-author">Somethea Siek</a>
             </p>
         </div>
-
         <div class="share-mask"></div>
         <div class="share-popup">
             <button class="share-close">X</button>
@@ -49,7 +51,6 @@
                 obcaecati qui omnis?
             </p>
         </div>
-
         <div class="question-mask"></div>
         <div class="question-popup">
             <button class="question-close">X</button>
@@ -61,8 +62,9 @@
             </p>
         </div>
 
+        <!-- ------------------------ Landing Page ------------------------ -->
 
-        <section class="landing-page" id="landing-page">
+        <section class="landing-page" id="landing-page" data-scroll-speed="9">
             <a class="landing-page-item landing-page-title link-landing-page">
                 <img src="./images/full-logo.svg" alt="Impermanence Full Logo" />
             </a>
@@ -75,6 +77,15 @@
                 <button class="about">About</button>
                 <button class="share">Share</button>
             </div>
+            <div class="landing-page-item landing-page-item-warning">
+                <p>
+                    Nothing is permanent...
+                </p>
+                <br>
+                <p>
+                    This page will be deleted once you move downwards...
+                </p>
+            </div>
             <a class="down down-landing-page link-home-page">
                 <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
                 <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
@@ -84,15 +95,16 @@
                 <img class="question-mark" src="./images/question.svg" alt="Question Mark" />
             </button>
         </section>
-
-        <div class="transition landing-page-transition">
+        <div class="transition landing-page-transition" data-scroll-speed="4">
         </div>
+
+        <!-- ------------------------ Every Other Pages ------------------------ -->
 
         <section class="home-page" id="home-page">
             <img src="./images/header-logo.svg" alt="Impermanence Header Logo" class="header header-logo" />
             <h2 class="header header-title">Home</h2>
 
-            <p class="text text-loss">
+            <p class="text text-home-page">
                 <em>Impermanence</em>, also known as the philosophical problem of change, is a philosophical concept
                 addressed in
                 a variety of religions and philosophies. In Eastern philosophy, it is the <em>three marks of
@@ -100,19 +112,19 @@
                 is also an element of Hinduism. In the West, the writings of Heraclitus introduced the concept.
             </p>
 
-            <img class="gif gif-loss" src="images/loss.svg" alt="Birds Outline">
+            <img class="gif" src="./images/homepage.gif" alt="Birds Flying">
 
-            <div class="links">
-                <a class="link-loss">1. Dealing With Loss</a>
-                <a class="link-confidence">2. Building Confidence</a>
-                <a class="link-love">3. Love, Love, Love</a>
+            <div class="links home-page">
+                <a class="link-loss home-page">1. Dealing With Loss</a>
+                <a class="link-confidence home-page">2. Building Confidence</a>
+                <a class="link-love home-page">3. Love, Love, Love</a>
             </div>
 
             <div class="information">
                 <button class="about">About</button>
                 <button class="share">Share</button>
             </div>
-            <a class="down down-with-text" href="#">
+            <a class="down down-with-text link-loss">
                 <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
                 <p class="down-text">Dealing With Loss</p>
                 <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
@@ -121,12 +133,150 @@
                 <img class="question-mark" src="./images/question.svg" alt="Question Mark" />
             </button>
         </section>
+
+        <section class="loss" id="loss">
+            <a class="header header-back link-home-page">
+                <img class="header-back-mark" src="./images/back.svg" alt="Go Back">
+            </a>
+
+            <img src="./images/header-logo.svg" alt="Impermanence Header Logo" class="header header-logo" />
+            <h2 class="header header-title">1. Dealing With Loss</h2>
+
+            <div class="text">
+                <p>
+                    There is <em>no right or wrong</em> way to grieve, but there are healthy ways to deal with the
+                    grieving
+                    process.
+                    Grief is a natural response to loss. Ways to deal with loss:
+                </p>
+                <ol>
+                    <li>
+                        <em>Acknowledge</em> your pain.
+                    </li>
+                    <li>
+                        <em>Accept</em> that grief triggers emotions.
+                    </li>
+                    <li>
+                        Seek out face-to-face <em>support</em>.
+                    </li>
+                    <li>
+                        <em>Exercise</em>, it helps with overthinking.
+                    </li>
+                </ol>
+            </div>
+
+            <img class="gif" src="images/loss.svg" alt="Birds Outline">
+
+            <div class="links">
+                <a class="link-confidence">2. Building Confidence</a>
+                <a class="link-love">3. Love, Love, Love</a>
+            </div>
+
+            <div class="information">
+                <button class="about">About</button>
+                <button class="share">Share</button>
+            </div>
+            <a class="down down-with-text link-confidence" href="#">
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
+                <p class="down-text">Building Confidence</p>
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
+            </a>
+            <button class="question">
+                <img class="question-mark" src="./images/question.svg" alt="Question Mark" />
+            </button>
+        </section>
+
+        <section class="confidence" id="confidence">
+            <a class="header header-back link-loss">
+                <img class="header-back-mark" src="./images/back.svg" alt="Go Back">
+            </a>
+            <img src="./images/header-logo.svg" alt="Impermanence Header Logo" class="header header-logo" />
+            <h2 class="header header-title">2. Building Confidence</h2>
+
+            <div class="text">
+                <p>
+                    Self-confidence is not a <em>static</em> measure. Our confidence can increase and decrease depending
+                    on many
+                    factors like mood. Ways to Improve Confidence:
+                </p>
+                <ol>
+                    <li>Always plan and <em>prepare</em>.</li>
+                    <li>Keep learning and gaining <em>knowledge</em>.</li>
+                    <li>Try to think <em>positively</em>.</li>
+                    <li><em>Get out</em> of your comfort zone more.</li>
+                </ol>
+            </div>
+
+            <img class="gif" src="images/confidence.svg" alt="Birds Appearing Animation">
+
+            <div class="links">
+                <a class="link-love selected">3. Love, Love, Love</a>
+                <a class="link-home-page">Return Home</a>
+            </div>
+
+            <div class="information">
+                <button class="about">About</button>
+                <button class="share">Share</button>
+            </div>
+            <a class="down down-with-text link-love" href="#">
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
+                <p class="down-text">Love, Love, Love</p>
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="Down Arrow" />
+            </a>
+            <button class="question">
+                <img class="question-mark" src="./images/question.svg" alt="Question Mark" />
+            </button>
+        </section>
+
+        <section class="love" id="love">
+            <a class="header header-back link-confidence">
+                <img class="header-back-mark" src="./images/back.svg" alt="Go Back">
+            </a>
+            <img src="./images/header-logo.svg" alt="Impermanence Header Logo" class="header header-logo" />
+            <h2 class="header header-title">3. Love, Love, Love</h2>
+
+            <div class="text">
+                <p>
+                    Everyone wants to feel deeply <em>connected</em> to other people, fully seen and appreciated by
+                    them, and
+                    secure in those relationships. Ways to create more love:
+                </p>
+                <ol>
+                    <li>Start <em>meaningful</em> chats.</li>
+                    <li>Gift your <em>presence.</em></li>
+                    <li><em>Open</em> your mind.</li>
+                    <li><em>Value</em> everyone near you.</li>
+                </ol>
+            </div>
+
+            <object class="gif" data="./images/love.svg" type="image/svg+xml" alt="Interactive Birds"></object>
+
+            <div class="links">
+                <a class="link-home-page selected">Return Home</a>
+                <a class="link-loss">1. Dealing With Loss</a>
+            </div>
+
+            <div class="information">
+                <button class="about">About</button>
+                <button class="share">Share</button>
+            </div>
+            <a class="down down-with-text link-home-page return-home" href="#">
+                <img class="down-arrow return-home" src="./images/down-arrow.svg" alt="Down Arrow" />
+                <p class="down-text">Return Home</p>
+                <img class="down-arrow return-home" src="./images/down-arrow.svg" alt="Down Arrow" />
+            </a>
+            <button class="question">
+                <img class="question-mark" src="./images/question.svg" alt="Question Mark" />
+            </button>
+        </section>
     </main>
 
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
     <script src="./js/lax.js"></script>
+
     <script src="./js/transition.js"></script>
     <script src="./js/links.js"></script>
-    <script src="./js/down-landing-page.js"></script>
+    <script src="./js/down.js"></script>
     <script src="./js/about.js"></script>
     <script src="./js/share.js"></script>
     <script src="./js/question.js"></script>
@@ -134,7 +284,5 @@
 
 </html>
 
-<!-- <img class="gif" src="loss/loss.svg">
-<img class="gif" src="homepage/homepage.gif">
-<img class="gif" src="confidence/confidence.svg">
-<object class="gif" data="love/love.svg" type="image/svg+xml"></object> -->
+<!--
+ -->
