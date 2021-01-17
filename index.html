@@ -64,9 +64,9 @@
 
         <!-- ------------------------ Landing Page ------------------------ -->
 
-        <section class="landing-page" id="landing-page" data-scroll-speed="9">
+        <section class="landing-page" id="landing-page">
             <a class="landing-page-item landing-page-title link-landing-page">
-                <img src="./images/full-logo.svg" alt="Impermanence Full Logo" />
+                <img src="./images/full-logo.png" alt="Impermanence Full Logo" />
             </a>
             <h2 class="landing-page-item landing-page-item-subtitle">And How Its <em>Good</em></h2>
             <h3 class="landing-page-item landing-page-item-author">
@@ -78,11 +78,11 @@
                 <button class="share">Share</button>
             </div>
             <div class="landing-page-item landing-page-item-warning">
-                <p>
+                <p class="landing-page-item-warning-1">
                     Nothing is permanent...
                 </p>
                 <br>
-                <p>
+                <p class="landing-page-item-warning-2">
                     This page will be deleted once you move downwards...
                 </p>
             </div>
@@ -95,13 +95,13 @@
                 <img class="question-mark" src="./images/question.svg" alt="Question Mark" />
             </button>
         </section>
-        <div class="transition landing-page-transition" data-scroll-speed="4">
+        <div class="transition landing-page-transition">
         </div>
 
         <!-- ------------------------ Every Other Pages ------------------------ -->
 
         <section class="home-page" id="home-page">
-            <img src="./images/header-logo.svg" alt="Impermanence Header Logo" class="header header-logo" />
+            <img src="./images/header-logo.png" alt="Impermanence Header Logo" class="header header-logo" />
             <h2 class="header header-title">Home</h2>
 
             <p class="text text-home-page">
@@ -139,7 +139,7 @@
                 <img class="header-back-mark" src="./images/back.svg" alt="Go Back">
             </a>
 
-            <img src="./images/header-logo.svg" alt="Impermanence Header Logo" class="header header-logo" />
+            <img src="./images/header-logo.png" alt="Impermanence Header Logo" class="header header-logo" />
             <h2 class="header header-title">1. Dealing With Loss</h2>
 
             <div class="text">
@@ -190,7 +190,7 @@
             <a class="header header-back link-loss">
                 <img class="header-back-mark" src="./images/back.svg" alt="Go Back">
             </a>
-            <img src="./images/header-logo.svg" alt="Impermanence Header Logo" class="header header-logo" />
+            <img src="./images/header-logo.png" alt="Impermanence Header Logo" class="header header-logo" />
             <h2 class="header header-title">2. Building Confidence</h2>
 
             <div class="text">
@@ -232,7 +232,7 @@
             <a class="header header-back link-confidence">
                 <img class="header-back-mark" src="./images/back.svg" alt="Go Back">
             </a>
-            <img src="./images/header-logo.svg" alt="Impermanence Header Logo" class="header header-logo" />
+            <img src="./images/header-logo.png" alt="Impermanence Header Logo" class="header header-logo" />
             <h2 class="header header-title">3. Love, Love, Love</h2>
 
             <div class="text">
@@ -249,7 +249,9 @@
                 </ol>
             </div>
 
-            <object class="gif" data="./images/love.svg" type="image/svg+xml" alt="Interactive Birds"></object>
+            <object class="gif gif-love" data="./images/love.svg" type="image/svg+xml" alt="Interactive Birds">
+                <object>This application shows the blue and red birds interacting.</object>
+            </object>
 
             <div class="links">
                 <a class="link-home-page selected">Return Home</a>
@@ -271,6 +273,7 @@
         </section>
     </main>
 
+    <script src="./js/typewriter-effect.js"></script>
     <script src="./js/smooth-scroll.polyfills.min.js"></script>
     <script src="./js/lax.js"></script>
 
