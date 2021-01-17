@@ -43,6 +43,37 @@ const addArrows = () => {
   });
 };
 
+const addTypeWriters = () => {
+  const warning1 = document.querySelector('.landing-page-item-warning-1');
+  const warning1Typewriter = new Typewriter(warning1, {
+    loop: true,
+    delay: 150,
+  });
+  warning1Typewriter
+    .pauseFor(500)
+    .typeString('Nothing is...')
+    .pauseFor(750)
+    .deleteChars(3)
+    .typeString(' permanent.')
+    .pauseFor(750)
+    .typeString('..')
+    .deleteChars(12)
+    .typeString('permanent...')
+    .pauseFor(5000)
+    .start();
+
+  const warning2 = document.querySelector('.landing-page-item-warning-2');
+  const warning2Typewriter = new Typewriter(warning2, {
+    loop: false,
+    delay: 100,
+  });
+  warning2Typewriter
+    .pauseFor(7500)
+    .typeString('This page will be <em>deleted</em> once you move downwards...')
+    .start();
+};
+
 window.addEventListener('load', () => {
   addArrows();
+  addTypeWriters();
 });
