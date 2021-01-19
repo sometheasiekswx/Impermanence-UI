@@ -9,4 +9,6 @@ Live site: https://impermanence.azurewebsites.net
 - HTML
 - CSS
 - JS
-- Lax.js
+- [lax.js](https://github.com/alexfoxy/lax.js)
+- [TypewriterJS v2](https://www.npmjs.com/package/typewriter-effect)
+- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)

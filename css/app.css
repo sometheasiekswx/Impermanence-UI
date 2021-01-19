@@ -53,8 +53,13 @@ h3 {
   font-weight: 200;
 }
 
-ol {
+ol,
+ul {
   list-style-position: inside;
+}
+
+li {
+  margin: 0.5rem 0;
 }
 
 a,
@@ -258,8 +263,16 @@ img {
   font-size: 1.5rem;
 }
 
-.about-text > a {
+.about-text > a,
+.about-text > li,
+.about-text > li > a,
+.share-social-media,
+.share-social-media > a {
   transition: all 0s;
+}
+
+.share-social-media {
+  margin-top: 1rem;
 }
 
 .down {
