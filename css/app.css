@@ -120,6 +120,7 @@ img {
 .gif {
   grid-area: 4 / 8 / 9 / 12;
   height: 100%;
+  width: auto;
 }
 
 .links {
@@ -344,6 +345,7 @@ img {
 
   .gif {
     grid-area: 3 / 9 / 9 / 12;
+    height: 70%;
   }
 
   .gif-love {
