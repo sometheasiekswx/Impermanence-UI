@@ -1,8 +1,8 @@
-[![Impermanence](images/full-logo-black-background.svg)](https://impermanence.azurewebsites.net)
+[![Impermanence](images/full-logo-black-background.svg)](https://impermanencesometheasiek.netlify.app/)
 
 Web App project illustrating the exploration of Impermanence. Built for [ADV201 - Web Design and Interactivity](https://www.deakin.edu.au/courses/unit?unit=ADV201).
 
-Live site: https://impermanence.azurewebsites.net
+Live site: https://impermanencesometheasiek.netlify.app/
 
 ## Technologies Used
 
